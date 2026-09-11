@@ -1,0 +1,17 @@
+{
+  "name": "live-radio-click-tracker",
+  "version": "1.0.0",
+  "description": "Cloudflare Worker + D1 click tracker for YouTube live streams",
+  "main": "worker.js",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "init-db": "wrangler d1 execute radio-clicks-db --file=schema.sql"
+  },
+  "keywords": ["cloudflare", "worker", "d1", "analytics", "click-tracking"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^3.28.0"
+  }
+}
